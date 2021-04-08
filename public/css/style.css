@@ -1,0 +1,74 @@
+/* Exo 1 */
+    #exo1{
+        max-width: max-content;
+        position: relative;
+       }
+
+
+    section:first-child>h1::before{
+        content:" ";
+        position: absolute;
+        background-color: red;
+        height: 3px;
+        width: 0%;
+        bottom:0px;
+        transition: 5s;
+    }
+
+    section:first-child>h1:hover::before{
+        
+        width: 100%;
+        } 
+
+/* fin Exo 1 */
+
+/* Exo 2 */
+#exo2{
+    max-width: max-content;
+    position: relative;
+   
+}
+section:nth-of-type(2)>h1::before{
+    content:" ";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 0%;
+    bottom:0px;
+    transition: 5s;
+    left:50%;
+}
+section:nth-of-type(2)>h1:hover::before{
+     width: 100%;   
+    left: 0%;
+    } 
+
+
+
+/* fin Exo 2 */
+
+/* Exo 3 */
+#exo3{
+    max-width: max-content;
+    
+    position: relative;
+}
+section:nth-of-type(3)>h1::before{
+    content:" ";
+    position: absolute;
+    background-color: red;
+    height: 0%;
+    width: 100%;
+    bottom:0px;
+    transition: 5s;
+    
+}
+section:nth-of-type(3)>h1:hover::before{
+      
+    height: 100%;
+    z-index: -1;
+   } 
+
+
+
+/* fin Exo 3 */
